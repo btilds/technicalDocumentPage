@@ -1,0 +1,67 @@
+html {
+  font-family: 'Aldrich', monospace;
+  line-spacing: 5px;
+}
+header {
+  font-size: 30px;
+}
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.navbar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: green;
+  color: white;
+}
+
+#main-doc {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .navbar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    text-align: center;
+    float: none;
+  }
+}
+code {
+  font-size: 16px;
+}
+nav header {
+  text-align: center;
+  padding: 5px;
+}
